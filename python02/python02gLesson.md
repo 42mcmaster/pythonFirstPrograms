@@ -1,4 +1,4 @@
-# Lesson 2f: Program Structure and Best Practices
+# Lesson 2g: Program Structure and Best Practices
 
 ## Learning Objectives
 By the end of this lesson, you will be able to:
