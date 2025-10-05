@@ -145,7 +145,4 @@ for count in range(1, 4):
 
 ---
 
-```
 
-Would you like me to also **add a dedicated practice slide** for your students where they compute **squares of numbers 1–5** (using both multiplication and the `**` exponent operator), so it flows right after the “Exponent” example?
-```
