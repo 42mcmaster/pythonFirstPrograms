@@ -9,7 +9,7 @@ Save each task as a separate `.py` file with a descriptive name.
 
 ---
 
-## Task 1: Countdown Timer ⭐
+## Task 1: Countdown Timer 
 **Difficulty: Easy**
 
 Write a program that prints "Blast off!" exactly 10 times using a for loop.
@@ -28,7 +28,7 @@ Blast off!
 
 ---
 
-## Task 2: Square Calculator ⭐
+## Task 2: Square Calculator 
 **Difficulty: Easy**
 
 Create a program that prints the squares of numbers 1 through 5.
@@ -45,11 +45,11 @@ Create a program that prints the squares of numbers 1 through 5.
 **Hints:**
 - You'll need a loop that runs 5 times
 - Use a variable to track the current number
-- Multiply the number by itself to get its square
+- Multiply the number by itself to get its square (i * i), but you can also use the exponent operator "**"
 
 ---
 
-## Task 3: Name Repeater ⭐⭐
+## Task 3: Name Repeater 
 **Difficulty: Medium**
 
 Write a program that:
@@ -71,7 +71,7 @@ Alex Alex Alex Alex
 
 ---
 
-## Task 4: Factorial Calculator ⭐⭐
+## Task 4: Factorial Calculator 
 **Difficulty: Medium**
 
 Write a program that calculates the factorial of a number.
@@ -95,7 +95,7 @@ The factorial of 5 is 120
 
 ---
 
-## Task 5: Power Calculator ⭐⭐⭐
+## Task 5: Power Calculator 
 **Difficulty: Hard**
 
 Create a program that calculates any number raised to any power WITHOUT using the `**` operator.
@@ -125,7 +125,7 @@ Enter the exponent: 4
 
 ---
 
-## Task 6: Pattern Printer ⭐⭐⭐
+## Task 6: Pattern Printer 
 **Difficulty: Hard**
 
 Write a program that prints this pattern:
@@ -148,7 +148,7 @@ Write a program that prints this pattern:
 
 ---
 
-## Challenge Task: Triangle Area Calculator 🌟
+## Challenge Task: Triangle Area Calculator 
 **Difficulty: Challenge**
 
 Create a program that calculates the area of multiple triangles.
