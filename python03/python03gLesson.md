@@ -1,4 +1,4 @@
-# Lesson 3.7: While Loops and Conditional Iteration
+# Lesson 3g: While Loops and Conditional Iteration
 
 ## Learning Objectives
 - Understand conditional iteration vs definite iteration

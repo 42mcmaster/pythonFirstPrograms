@@ -1,4 +1,4 @@
-# Lesson 3.1 Tasks: For Loops Practice
+# Lesson 3a Tasks: For Loops Practice
 
 ## Setup
 You can complete these tasks in either:

@@ -1,4 +1,4 @@
-# Lesson 3.2: Count-Controlled Loops and Range
+# Lesson 3b: Count-Controlled Loops and Range
 
 ## Learning Objectives
 - Use loops to count through a range of numbers

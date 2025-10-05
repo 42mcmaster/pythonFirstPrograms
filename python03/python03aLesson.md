@@ -1,4 +1,4 @@
-# Lesson 3.1: Introduction to For Loops
+# Lesson 3a: Introduction to For Loops
 
 ## Learning Objectives
 - Understand what repetition statements (loops) are

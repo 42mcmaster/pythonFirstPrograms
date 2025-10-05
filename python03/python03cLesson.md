@@ -1,4 +1,4 @@
-# Lesson 3.3: String Traversal and Formatting Output
+# Lesson 3c: String Traversal and Formatting Output
 
 ## Learning Objectives
 - Understand that strings are sequences

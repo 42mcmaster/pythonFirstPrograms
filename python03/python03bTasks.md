@@ -1,4 +1,4 @@
-# Lesson 3.3 Tasks: String Traversal and Formatting Practice
+# Lesson 3b Tasks: String Traversal and Formatting Practice
 
 ## Setup
 Complete these tasks in IDLE or VS Code. Test with various inputs!

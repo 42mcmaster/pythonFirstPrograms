@@ -1,4 +1,4 @@
-# Lesson 3.4: Boolean Expressions and If Statements
+# Lesson 3d: Boolean Expressions and If Statements
 
 ## Learning Objectives
 - Understand Boolean data types (True and False)

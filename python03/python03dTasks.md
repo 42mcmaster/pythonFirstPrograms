@@ -1,4 +1,4 @@
-# Lesson 3.4 Tasks: If Statements Practice
+# Lesson 3d Tasks: If Statements Practice
 
 ## Setup
 Complete these tasks in IDLE or VS Code. Test thoroughly with different inputs!

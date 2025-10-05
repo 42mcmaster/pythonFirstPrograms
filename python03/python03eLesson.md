@@ -1,4 +1,4 @@
-# Lesson 3.5: Multi-Way Selection Statements
+# Lesson 3e: Multi-Way Selection Statements
 
 ## Learning Objectives
 - Understand when to use multi-way selection

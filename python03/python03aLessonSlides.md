@@ -5,7 +5,7 @@ class: invert
 paginate: true
 ---
 
-# Lesson 3.1: Introduction to For Loops
+# Lesson 3a: Introduction to For Loops
 
 ---
 
@@ -142,7 +142,4 @@ for count in range(1, 4):
 ✅ Run these examples in **IDLE or VS Code**
 ✅ Experiment by changing the numbers
 ✅ Watch how the loop output changes
-
----
-
 

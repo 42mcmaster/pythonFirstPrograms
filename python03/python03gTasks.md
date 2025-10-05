@@ -1,4 +1,4 @@
-# Lesson 3.7 Tasks: While Loops Practice
+# Lesson 3g Tasks: While Loops Practice
 
 ## Setup
 Complete these tasks in IDLE or VS Code. Be careful to avoid infinite loops!

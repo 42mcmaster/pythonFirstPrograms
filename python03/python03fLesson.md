@@ -1,4 +1,4 @@
-# Lesson 3.6: Logical Operators and Compound Conditions
+# Lesson 3f: Logical Operators and Compound Conditions
 
 ## Learning Objectives
 - Use logical operators: and, or, not

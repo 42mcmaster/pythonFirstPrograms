@@ -1,4 +1,4 @@
-# Lesson 3.6 Tasks: Logical Operators Practice
+# Lesson 3f Tasks: Logical Operators Practice
 
 ## Setup
 Complete these tasks in IDLE or VS Code. Focus on using compound conditions!

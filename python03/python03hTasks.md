@@ -1,4 +1,4 @@
-# Lesson 3.8 Tasks: Random Numbers and Final Projects
+# Lesson 3h Tasks: Random Numbers and Final Projects
 
 ## Setup
 These tasks combine everything from Chapter 3. Test thoroughly!

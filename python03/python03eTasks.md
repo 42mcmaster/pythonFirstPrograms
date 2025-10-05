@@ -1,4 +1,4 @@
-# Lesson 3.5 Tasks: Multi-Way Selection Practice
+# Lesson 3e Tasks: Multi-Way Selection Practice
 
 ## Setup
 Complete these tasks in IDLE or VS Code. Remember to test with various inputs!

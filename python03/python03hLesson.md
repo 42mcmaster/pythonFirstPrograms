@@ -1,4 +1,4 @@
-# Lesson 3.8: Random Numbers and Loop Testing
+# Lesson 3h: Random Numbers and Loop Testing
 
 ## Learning Objectives
 - Generate random numbers using the random module
