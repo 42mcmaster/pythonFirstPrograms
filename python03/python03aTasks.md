@@ -7,6 +7,10 @@ You can complete these tasks in either:
 
 Save each task as a separate `.py` file with a descriptive name.
 
+Create a new GitHub Repo called pythonCh3 and push all of your completed files to the Repo. 
+
+Submit the link to your public Repo in the Google Classroom Assignment. 
+
 ---
 
 ## Task 1: Countdown Timer 
@@ -44,7 +48,6 @@ Create a program that prints the squares of numbers 1 through 5.
 
 **Hints:**
 - You'll need a loop that runs 5 times
-- Use a variable to track the current number
 - Multiply the number by itself to get its square (i * i), but you can also use the exponent operator "**"
 
 ---
@@ -92,36 +95,42 @@ The factorial of 5 is 120
 - Start with `product = 1`
 - Use `range(1, number + 1)` to get numbers 1 through the user's number
 - Multiply product by each number in the loop
+- The answer to this one is at the end, if you're really struggling
 
 ---
 
-## Task 5: Power Calculator 
+## Task 5: Free Throw Tracker 
 **Difficulty: Hard**
 
-Create a program that calculates any number raised to any power WITHOUT using the `**` operator.
+Create a program that tracks the score of a basketball player’s free throws.
 
 Your program should:
-1. Ask for a base number
-2. Ask for an exponent
-3. Calculate base^exponent using a for loop
-4. Display each step of the calculation
+1. Ask the user how many free throw attempts they want to simulate.
+2. For each attempt, ask if the shot was made (y) or missed (n).
+3. Use a loop to keep track of the total points (each made shot = 1 point).
+4. Print the score after each attempt.
+5. Print the final score at the end.
 
-**Sample Run:**
+**Sample Run**
+```sql
+How many free throws will you attempt? 5
+Shot 1 (y/n): y
+Current score: 1
+Shot 2 (y/n): n
+Current score: 1
+Shot 3 (y/n): y
+Current score: 2
+Shot 4 (y/n): y
+Current score: 3
+Shot 5 (y/n): n
+Current score: 3
+Final score: 3 out of 5
 ```
-Enter the base: 3
-Enter the exponent: 4
-3
-9
-27
-81
-3 to the power of 4 is 81
-```
-
-**Hints:**
-- Start with `result = 1`
-- Multiply result by the base number, exponent times
-- Print the result after each multiplication
-- Print a final summary message
+Hints
+* Start with score = 0
+* Use for i in range(attempts): to loop through the shots
+* Each time the user enters y, add 1 point to the score
+* Print the running total inside the loop
 
 ---
 
@@ -139,12 +148,13 @@ Write a program that prints this pattern:
 
 **Requirements:**
 - Use a for loop
-- Use string concatenation or augmented assignment
+- Use string concatenation `( + )`or augmented assignment `( += )`
 
 **Hints:**
 - Start with an empty string: `stars = ""`
 - Each iteration, add one more star
 - Print the stars each time through the loop
+- The answer to this one is also at the end, but try to work this out yourself, first!
 
 ---
 
@@ -192,6 +202,8 @@ Total area of all triangles: 49.0
 2. Make sure your code is properly indented
 3. Add comments explaining what your code does
 4. Save each task as a separate file: `task_3_1_1.py`, `task_3_1_2.py`, etc.
+5. Push your files to your GitHub Repo called `pythonCh3`
+6. Share the link to your GitHub Repo (make sure it's public) in Google Classroom
 
 ## Getting Help
 
@@ -200,3 +212,33 @@ If you get stuck:
 2. Try running the examples from the lesson
 3. Check your indentation carefully
 4. Ask a classmate or your teacher for help
+
+```python
+## Task 4: Factorial Calculator 
+
+# Ask the user for a number
+number = int(input("Enter a number: "))
+
+# Start with product = 1 (factorial identity)
+product = 1
+
+# Loop through numbers 1 up to the entered number
+for i in range(1, number + 1):
+    product = product * i   # multiply product by i
+
+# Print the result
+print(f"The factorial of {number} is {product}")
+```
+
+```python
+## Task 6: Pattern Printer
+
+# Start with an empty string
+stars = ""
+
+# Loop 5 times
+for i in range(5):
+    stars += "*"      # add one star 
+    print(stars)      # print the current string
+
+```
