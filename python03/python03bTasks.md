@@ -5,7 +5,7 @@ Complete these tasks in IDLE or VS Code. Test with various inputs!
 
 ---
 
-## Task 1: Character Printer ⭐
+## Task 1: Character Printer 
 **Difficulty: Easy**
 
 Write a program that asks the user for a word and prints each character on a separate line.
@@ -21,13 +21,19 @@ o
 n
 ```
 
-**Hints:**
-- Use a for loop to iterate through the string
-- Print each character
+**Starter Code:**
+```python
+# Get input from user
+word = input("Enter a word: ")
+
+# Loop through each character
+for ____ in ____:  # TODO: fill in the blanks, print the output
+    
+```
 
 ---
 
-## Task 2: Letter Counter ⭐
+## Task 2: Letter Counter 
 **Difficulty: Easy**
 
 Create a program that counts how many letters 'a' (lowercase) appear in a user-entered text.
@@ -38,14 +44,26 @@ Enter some text: banana
 The letter 'a' appears 3 times
 ```
 
-**Hints:**
-- Use a counter variable starting at 0
-- Check if each character equals 'a'
-- Increment the counter when found
+**Starter Code:**
+```python
+# Get text from user
+text = _____("Enter some text: ") # TODO: fill in the blanks
+
+# Initialize counter
+count = 0
+
+# Loop through each character
+for char in text:
+    # TODO: Check if character is 'a'
+    # TODO: If yes, increment count
+
+# Print result
+print("The letter 'a' appears", count, "times")
+```
 
 ---
 
-## Task 3: Vowel and Consonant Counter ⭐⭐
+## Task 3: Vowel and Consonant Counter 
 **Difficulty: Medium**
 
 Write a program that counts both vowels and consonants in a user-entered text.
@@ -58,15 +76,37 @@ Vowels: 3
 Consonants: 7
 ```
 
-**Hints:**
-- Keep two separate counters
-- Check if character is in "aeiouAEIOU" for vowels
-- Check if character.isalpha() for letters
-- Consonants = letters that aren't vowels
+**Starter Code:**
+```python
+# Get text from user
+text = input("Enter text: ")
+
+# Initialize counters
+vowel_count = 0
+consonant_count = 0
+
+# Define vowels
+vowels = "aeiouAEIOU"
+
+# Loop through each character
+for char in text:
+    # TODO: Check if character is a letter using char.isalpha()
+    if char.isalpha():
+        # TODO: Check if it's a vowel (if char in vowels)
+        if ___________:
+            vowel_count += 1
+        else:
+            # TODO: It's a consonant
+            ___________
+
+# Print results
+print("Vowels:", vowel_count)
+print("Consonants:", consonant_count)
+```
 
 ---
 
-## Task 4: Powers Table ⭐⭐
+## Task 4: Powers Table 
 **Difficulty: Medium**
 
 Create a formatted table showing powers of 2 from 2⁰ to 2¹⁰.
@@ -88,15 +128,22 @@ Exponent    Value
   10         1024
 ```
 
-**Hints:**
-- Use a for loop with range(11)
-- Calculate 2**exponent for each value
-- Use format string: `"%4d %8d"`
-- Print header and separator first
+**Starter Code:**
+```python
+# Print header
+print("Exponent    Value")
+print("--------    -----")
+
+# Loop through exponents 0 to 10
+for exponent in range(___):
+    value = 2 ** exponent
+    # TODO: Print with format string "%4d %8d"
+    print("__________" % (exponent, value))
+```
 
 ---
 
-## Task 5: Price List Formatter ⭐⭐
+## Task 5: Price List Formatter 
 **Difficulty: Medium**
 
 Write a program that displays a formatted price list.
@@ -119,15 +166,33 @@ Notebook     $   3.25 $   0.20
 Eraser       $   0.75 $   0.05
 ```
 
-**Hints:**
-- Store items in a list
-- Store prices in a list
-- Use format string: `"%-12s $%7.2f $%7.2f"`
-- Calculate tax: `price * 0.06`
+**Starter Code:**
+```python
+# Initialize lists
+items = []
+prices = []
+
+# Collect 3 items and prices
+for i in range(1, 4):
+    item = input("Enter item %d: " % i)
+    price = float(input("Enter price %d: " % i))
+    items.append(item)
+    prices.append(price)
+
+# Print header
+print("\nItem          Price    Tax")
+print("------------ -------- --------")
+
+# Print each item with price and tax
+for i in range(3):
+    tax = prices[i] * 0.06
+    # TODO: Use format "%-12s $%7.2f $%7.2f"
+    print("__________" % (items[i], prices[i], tax))
+```
 
 ---
 
-## Task 6: Reverse String Builder ⭐⭐
+## Task 6: Reverse String Builder 
 **Difficulty: Medium**
 
 Create a program that reverses a string using a for loop.
@@ -138,14 +203,26 @@ Enter a word: Python
 nohtyP
 ```
 
-**Hints:**
-- Start with an empty string: `reversed_str = ""`
-- Loop through the original string
-- Add each character to the FRONT: `reversed_str = char + reversed_str`
+**Starter Code:**
+```python
+# Get word from user
+word = input("Enter a word: ")
+
+# Start with empty string
+reversed_word = ""
+
+# Loop through each character
+for char in word:
+    # TODO: Add character to FRONT of reversed_word
+    reversed_word = ___________
+
+# Print result
+print(reversed_word)
+```
 
 ---
 
-## Task 7: Character Frequency ⭐⭐⭐
+## Task 7: Character Frequency 
 **Difficulty: Hard**
 
 Write a program that counts the frequency of each unique character in a text (ignoring spaces).
@@ -163,15 +240,44 @@ r: 1
 d: 1
 ```
 
-**Hints:**
-- Keep track of characters you've already counted
-- For each unique character, count how many times it appears
-- Skip spaces
-- Use nested loops or create a list of seen characters
+**Starter Code:**
+```python
+# Get text from user
+text = input("Enter text: ")
+
+# Keep track of characters we've counted
+counted_chars = ""
+
+print("Character frequencies:")
+
+# Loop through each character in text
+for char in text:
+    # Skip spaces
+    if char == " ":
+        continue
+    
+    # Skip if we've already counted this character
+    if char in counted_chars:
+        continue
+    
+    # Count how many times this character appears
+    count = 0
+    for c in text:
+        if c == char:
+            count += 1
+    
+    # Print the frequency
+    print("%s: %d" % (char, count))
+    
+    # Remember we've counted this character
+    counted_chars += char
+```
+
+**This one is complete! Study it to understand how it works.**
 
 ---
 
-## Task 8: Report Card Generator ⭐⭐⭐
+## Task 8: Report Card Generator 
 **Difficulty: Hard**
 
 Create a program that generates a formatted report card.
@@ -192,8 +298,14 @@ Student name: Alex Smith
 
 Enter subject 1: Math
 Enter grade 1: 95
-
-(... continue for 5 subjects ...)
+Enter subject 2: Science
+Enter grade 2: 88
+Enter subject 3: English
+Enter grade 3: 92
+Enter subject 4: History
+Enter grade 4: 85
+Enter subject 5: PE
+Enter grade 5: 90
 
 REPORT CARD
 ==================================
@@ -211,15 +323,67 @@ Average:              90.0
 Letter Grade: A
 ```
 
-**Hints:**
-- Use lists to store subjects and grades
-- Calculate average after collecting all grades
-- Use if-elif statements for letter grade
-- Format with `"%-18s %7.0f"`
+**Starter Code:**
+```python
+# Get student name
+student_name = input("Student name: ")
+print()
+
+# Initialize lists
+subjects = []
+grades = []
+
+# Collect 5 subjects and grades
+for i in range(1, 6):
+    subject = input("Enter subject %d: " % i)
+    grade = int(input("Enter grade %d: " % i))
+    subjects.append(subject)
+    grades.append(grade)
+
+# Print report header
+print("\nREPORT CARD")
+print("=" * 34)
+print("Student:", student_name)
+print()
+print("%-18s %7s" % ("Subject", "Grade"))
+print("-" * 34)
+
+# Print each subject and grade
+for i in range(5):
+    # TODO: Print subject and grade using "%-18s %7d"
+    print("__________" % (subjects[i], grades[i]))
+
+print("-" * 34)
+
+# Calculate average
+total = 0
+for grade in grades:
+    total += grade
+average = total / len(grades)
+
+# Print average
+print("%-18s %7.1f" % ("Average:", average))
+
+# Determine letter grade
+# TODO: Use if-elif statements to determine letter grade
+if average >= 90:
+    letter = "A"
+elif ___________:
+    letter = "B"
+elif ___________:
+    letter = "C"
+elif ___________:
+    letter = "D"
+else:
+    letter = "F"
+
+print("Letter Grade:", letter)
+print("=" * 34)
+```
 
 ---
 
-## Task 9: Caesar Cipher Encoder ⭐⭐⭐
+## Task 9: Caesar Cipher Encoder
 **Difficulty: Hard**
 
 Write a program that encodes text using a simple Caesar cipher (shift each letter by a certain amount).
@@ -236,15 +400,44 @@ Encoded text: KHOOR
 - Keep other characters unchanged
 - Handle wrap-around (Z+1 = A)
 
-**Hints:**
-- Use `ord()` to get ASCII value: `ord('A')` = 65
-- Use `chr()` to convert back: `chr(65)` = 'A'
-- Shift formula: `new_value = ((old_value - 65 + shift) % 26) + 65`
-- Handle uppercase and lowercase separately
+**Starter Code:**
+```python
+# Get input
+text = input("Enter text: ")
+shift = int(input("Enter shift amount: "))
+
+# Build encoded text
+encoded = ""
+
+for char in text:
+    if char.isupper():
+        # Handle uppercase letters (A-Z)
+        # Get position (A=0, B=1, etc.)
+        pos = ord(char) - ord('A')
+        # Shift and wrap around using modulo
+        new_pos = (pos + shift) % 26
+        # Convert back to character
+        new_char = chr(new_pos + ord('A'))
+        encoded += new_char
+    
+    elif char.islower():
+        # TODO: Handle lowercase letters (a-z)
+        # Similar to uppercase but use ord('a')
+        pos = ord(char) - ord('a')
+        new_pos = ___________
+        new_char = chr(new_pos + ord('a'))
+        encoded += new_char
+    
+    else:
+        # Keep non-letters unchanged
+        encoded += char
+
+print("Encoded text:", encoded)
+```
 
 ---
 
-## Challenge Task: Paycheck Formatter 🌟
+## Challenge Task: Paycheck Formatter
 **Difficulty: Challenge**
 
 Create a paycheck stub generator that:
@@ -285,11 +478,68 @@ NET PAY:                           $  662.50
 ================================
 ```
 
-**Hints:**
-- Calculate overtime hours: `max(0, hours - 40)`
-- Use format strings for alignment
-- All money should show 2 decimal places
-- Build it step by step - test each section
+**Starter Code:**
+```python
+# Get input
+name = input("Employee name: ")
+hours = float(input("Hours worked: "))
+rate = float(input("Hourly rate: "))
+
+# Calculate regular and overtime hours
+if hours <= 40:
+    regular_hours = hours
+    overtime_hours = 0
+else:
+    regular_hours = 40
+    overtime_hours = hours - 40
+
+# Calculate pay
+regular_pay = regular_hours * rate
+overtime_pay = overtime_hours * (rate * 1.5)
+gross_pay = regular_pay + overtime_pay
+
+# Calculate deductions
+tax = gross_pay * 0.20
+insurance = 50.00
+retirement = gross_pay * 0.05
+total_deductions = tax + insurance + retirement
+
+# Calculate net pay
+net_pay = gross_pay - total_deductions
+
+# Print paycheck stub
+print("\n" + "=" * 32)
+print("PAYCHECK STUB")
+print("=" * 32)
+print("Employee:", name)
+print()
+
+# TODO: Print regular hours line using format below
+# "Regular hours:  %6.1f @ $%.2f = $%9.2f"
+print("__________" % (regular_hours, rate, regular_pay))
+
+# TODO: Print overtime hours line (if any)
+if overtime_hours > 0:
+    print("__________" % (overtime_hours, rate * 1.5, overtime_pay))
+
+print(" " * 35 + "---------")
+# TODO: Print gross pay using "Gross Pay:" and format
+print("%-35s $%9.2f" % ("Gross Pay:", gross_pay))
+
+print()
+print("Deductions:")
+# TODO: Print each deduction with proper formatting
+print("  %-31s $%9.2f" % ("Federal Tax (20%):", tax))
+print("__________" % ("Insurance:", insurance))
+print("__________" % ("Retirement (5%):", retirement))
+
+print(" " * 35 + "---------")
+print("%-35s $%9.2f" % ("Total Deductions:", total_deductions))
+print()
+# TODO: Print net pay
+print("%-35s $%9.2f" % ("NET PAY:", net_pay))
+print("=" * 32)
+```
 
 ---
 
@@ -324,6 +574,79 @@ Most common character: o (appears 4 times)
 ========================================
 ```
 
+**Starter Code:**
+```python
+# Get text
+text = input("Enter text: ")
+
+# Count characters with spaces
+total_with_spaces = len(text)
+
+# Count characters without spaces
+total_no_spaces = 0
+for char in text:
+    if char != " ":
+        total_no_spaces += 1
+
+# Count words (split by spaces)
+words = text.split()
+word_count = len(words)
+
+# Count sentences
+sentence_count = 0
+for char in text:
+    if char in ".!?":
+        sentence_count += 1
+
+# Calculate average word length
+total_word_length = 0
+for word in words:
+    # Count only letters in each word
+    letter_count = 0
+    for char in word:
+        if char.isalpha():
+            letter_count += 1
+    total_word_length += letter_count
+
+if word_count > 0:
+    avg_word_length = total_word_length / word_count
+else:
+    avg_word_length = 0
+
+# Find longest word
+longest = ""
+for word in words:
+    # Remove punctuation from word
+    clean_word = ""
+    for char in word:
+        if char.isalpha():
+            clean_word += char
+    
+    if len(clean_word) > len(longest):
+        longest = clean_word
+
+# Find most common character (excluding spaces)
+# TODO: Similar to Task 7, find character with highest count
+most_common_char = ""
+most_common_count = 0
+
+# Your code here to find most common character
+# Hint: Loop through unique characters and count each
+
+# Print report
+print("\nTEXT ANALYSIS REPORT")
+print("=" * 40)
+print("%-35s %5d" % ("Total characters (with spaces):", total_with_spaces))
+print("%-35s %5d" % ("Total characters (no spaces):", total_no_spaces))
+print("%-35s %5d" % ("Total words:", word_count))
+print("%-35s %5d" % ("Total sentences:", sentence_count))
+print("%-35s %5.1f letters" % ("Average word length:", avg_word_length))
+print("%-35s %s" % ("Longest word:", longest))
+print()
+print("Most common character: %s (appears %d times)" % (most_common_char, most_common_count))
+print("=" * 40)
+```
+
 ---
 
 ## Submission Guidelines
@@ -337,7 +660,22 @@ Most common character: o (appears 4 times)
 
 ## Common Formatting Mistakes to Avoid
 
-1. Forgetting the `%` operator: `"Value: %d" (number)` ❌
-2. Wrong number of values: `"%d %d" % (5)` ❌ Should be `% (5, 6)`
-3. Type mismatch: `"%d" % 3.14` ❌ Use `%f` for floats
-4. Negative width on wrong side: `%5-d` ❌ Should be `%-5d`
+1. **Forgetting the `%` operator**: 
+   - ❌ `"Value: %d" (number)` 
+   - ✓ `"Value: %d" % (number)`
+
+2. **Wrong number of values**: 
+   - ❌ `"%d %d" % (5)` 
+   - ✓ `"%d %d" % (5, 6)`
+
+3. **Type mismatch**: 
+   - ❌ `"%d" % 3.14` (truncates to 3)
+   - ✓ `"%f" % 3.14` or `"%.2f" % 3.14`
+
+4. **Negative sign placement**: 
+   - ❌ `"%5-d"` 
+   - ✓ `"%-5d"`
+
+5. **Forgetting parentheses for multiple values**:
+   - ❌ `"%s %d" % "Hi", 5`
+   - ✓ `"%s %d" % ("Hi", 5)`
