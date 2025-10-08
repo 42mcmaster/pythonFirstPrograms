@@ -5,7 +5,7 @@ Complete these tasks in IDLE or VS Code. Test with various inputs!
 
 ---
 
-## Task 1: Character Printer ⭐
+## Task 1: Character Printer 
 **Difficulty: Easy**
 
 Write a program that asks the user for a word and prints each character on a separate line.
@@ -27,7 +27,7 @@ n
 
 ---
 
-## Task 2: Letter Counter ⭐
+## Task 2: Letter Counter 
 **Difficulty: Easy**
 
 Create a program that counts how many letters 'a' (lowercase) appear in a user-entered text.
@@ -45,7 +45,7 @@ The letter 'a' appears 3 times
 
 ---
 
-## Task 3: Vowel and Consonant Counter ⭐⭐
+## Task 3: Vowel and Consonant Counter 
 **Difficulty: Medium**
 
 Write a program that counts both vowels and consonants in a user-entered text.
@@ -66,7 +66,7 @@ Consonants: 7
 
 ---
 
-## Task 4: Powers Table ⭐⭐
+## Task 4: Powers Table 
 **Difficulty: Medium**
 
 Create a formatted table showing powers of 2 from 2⁰ to 2¹⁰.
@@ -96,7 +96,7 @@ Exponent    Value
 
 ---
 
-## Task 5: Price List Formatter ⭐⭐
+## Task 5: Price List Formatter 
 **Difficulty: Medium**
 
 Write a program that displays a formatted price list.
@@ -127,7 +127,7 @@ Eraser       $   0.75 $   0.05
 
 ---
 
-## Task 6: Reverse String Builder ⭐⭐
+## Task 6: Reverse String Builder 
 **Difficulty: Medium**
 
 Create a program that reverses a string using a for loop.
@@ -145,7 +145,7 @@ nohtyP
 
 ---
 
-## Task 7: Character Frequency ⭐⭐⭐
+## Task 7: Character Frequency 
 **Difficulty: Hard**
 
 Write a program that counts the frequency of each unique character in a text (ignoring spaces).
@@ -171,7 +171,7 @@ d: 1
 
 ---
 
-## Task 8: Report Card Generator ⭐⭐⭐
+## Task 8: Report Card Generator 
 **Difficulty: Hard**
 
 Create a program that generates a formatted report card.
@@ -219,7 +219,7 @@ Letter Grade: A
 
 ---
 
-## Task 9: Caesar Cipher Encoder ⭐⭐⭐
+## Task 9: Caesar Cipher Encoder 
 **Difficulty: Hard**
 
 Write a program that encodes text using a simple Caesar cipher (shift each letter by a certain amount).
@@ -244,7 +244,7 @@ Encoded text: KHOOR
 
 ---
 
-## Challenge Task: Paycheck Formatter 🌟
+## Challenge Task: Paycheck Formatter 
 **Difficulty: Challenge**
 
 Create a paycheck stub generator that:
@@ -293,7 +293,7 @@ NET PAY:                           $  662.50
 
 ---
 
-## Bonus Challenge: Text Statistics 🌟🌟
+## Bonus Challenge: Text Statistics 
 **Difficulty: Very Hard**
 
 Create a comprehensive text analyzer that shows:
