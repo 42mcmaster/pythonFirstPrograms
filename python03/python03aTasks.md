@@ -106,6 +106,10 @@ Create a program that tracks the score of a basketball player’s free throws.
 
 Your program should:
 1. Ask the user how many free throw attempts they want to simulate.
+
+**Hint**: You will want to implement a counter too, somthing like `sumFreeThrows = 0`
+ 
+
 2. For each attempt, ask if the shot was made (y) or missed (n).
 3. Use a loop to keep track of the total points (each made shot = 1 point).
 4. Print the score after each attempt.

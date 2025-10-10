@@ -24,11 +24,6 @@ Write a program that prints the numbers 5 through 15 (inclusive), each on a new 
 14
 15
 ```
-
-**Hints:**
-- Use `range(5, 16)` (remember, range stops before the last number!)
-- Print each number inside the loop
-
 ---
 
 ## Task 2: Even Numbers 

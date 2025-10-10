@@ -99,16 +99,6 @@ print("The sum is", theSum)
 
 ---
 
-### Sample Run
-
-```
-Enter the lower bound: 1
-Enter the upper bound: 10
-The sum is 55
-```
-
----
-
 # 🪜 Using Steps
 
 ### Counting by 2s
