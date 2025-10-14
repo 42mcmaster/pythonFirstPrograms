@@ -196,6 +196,7 @@ The average is 25.0
 - Use `range(1, count + 1)` to get the right number of iterations
 - Keep track of the sum
 - Calculate average: `average = total / count`
+- The answer is at the end!
 
 ---
 
@@ -248,6 +249,26 @@ Enter a number: 15
 - Use the modulus operator (%) to check divisibility
 - Think about when to print "is prime" vs "is not prime"
 
+```python
+# Ask how many numbers to process
+count = int(input("How many numbers? "))
+
+# Initialize a variable to keep track of the total
+total = 0
+
+# Loop through the specified number of times
+for i in range(1, count + 1):
+    number = float(input(f"Enter number {i}: "))
+    total += number  # Add each number to the running total
+
+# Calculate the average
+average = total / count
+
+# Display the result
+print(f"The average is {average}")
+
+```
+
 ---
 
 ## Submission Checklist
@@ -258,10 +279,3 @@ Enter a number: 15
 - [ ] Comments explain what the code does
 - [ ] Each task saved as separate file
 - [ ] Tested with different inputs
-
-## Extension Ideas
-
-If you finish early, try these modifications:
-- Add input validation (check for negative numbers, etc.)
-- Add more descriptive output messages
-- Combine multiple tasks into one program with a menu

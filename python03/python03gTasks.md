@@ -5,7 +5,7 @@ Complete these tasks in IDLE or VS Code. Be careful to avoid infinite loops!
 
 ---
 
-## Task 1: Countdown Timer ⭐
+## Task 1: Countdown Timer 
 **Difficulty: Easy**
 
 Write a program that counts down from 10 to 1, then prints "Blastoff!"
@@ -32,7 +32,7 @@ Blastoff!
 
 ---
 
-## Task 2: Sum Until Zero ⭐
+## Task 2: Sum Until Zero 
 **Difficulty: Easy**
 
 Create a program that keeps asking for numbers and adds them up until the user enters 0.
@@ -53,7 +53,7 @@ Total sum: 18
 
 ---
 
-## Task 3: Password Validator ⭐⭐
+## Task 3: Password Validator 
 **Difficulty: Medium**
 
 Write a program that keeps asking for a password until the user enters the correct one.
@@ -76,7 +76,7 @@ Access granted!
 
 ---
 
-## Task 4: Average Calculator ⭐⭐
+## Task 4: Average Calculator 
 **Difficulty: Medium**
 
 Create a program that calculates the average of numbers entered by the user.
@@ -98,7 +98,7 @@ Average: 20.0
 
 ---
 
-## Task 5: Number Guessing Game ⭐⭐
+## Task 5: Number Guessing Game 
 **Difficulty: Medium**
 
 Write a guessing game where the computer picks a random number between 1 and 50, and the user tries to guess it.
@@ -123,7 +123,7 @@ Correct! You got it in 3 guesses!
 
 ---
 
-## Task 6: Input Validation ⭐⭐
+## Task 6: Input Validation 
 **Difficulty: Medium**
 
 Create a program that asks for a grade and keeps asking until a valid grade (0-100) is entered.
@@ -145,7 +145,7 @@ Valid grade accepted: 95
 
 ---
 
-## Task 7: Factorial Calculator ⭐⭐
+## Task 7: Factorial Calculator 
 **Difficulty: Medium**
 
 Write a program that calculates the factorial of a number using a while loop.
@@ -164,7 +164,7 @@ Enter a number: 5
 
 ---
 
-## Task 8: ATM Simulator ⭐⭐⭐
+## Task 8: ATM Simulator 
 **Difficulty: Hard**
 
 Create a simple ATM program with these features:
@@ -208,7 +208,7 @@ Thank you for using our ATM!
 
 ---
 
-## Task 9: Login System with Lockout ⭐⭐⭐
+## Task 9: Login System with Lockout
 **Difficulty: Hard**
 
 Create a login system that:
@@ -242,7 +242,7 @@ Account locked! Contact administrator.
 
 ---
 
-## Task 10: Prime Number Finder ⭐⭐⭐
+## Task 10: Prime Number Finder 
 **Difficulty: Hard**
 
 Write a program that finds all prime numbers up to a number entered by the user.
@@ -261,97 +261,6 @@ Prime numbers: 2 3 5 7 11 13 17 19
 
 ---
 
-## Challenge Task 1: Multiplication Quiz 🌟
-**Difficulty: Challenge**
-
-Create a multiplication quiz program that:
-- Asks 5 random multiplication questions (numbers 1-12)
-- Keeps asking until user gets it right
-- Tracks total attempts
-- Shows final score
-
-**Sample Run:**
-```
-Question 1: 7 x 8 = 54
-Incorrect! Try again.
-Question 1: 7 x 8 = 56
-Correct!
-
-Question 2: 3 x 9 = 27
-Correct!
-
-...
-
-Quiz complete!
-You answered 5 questions correctly in 7 attempts.
-Accuracy: 71%
-```
-
-**Hints:**
-- Use nested loops (outer for questions, inner for attempts)
-- `import random` for random numbers
-- Track correct answers and total attempts
-
----
-
-## Challenge Task 2: Fibonacci Generator 🌟
-**Difficulty: Challenge**
-
-Write a program that generates Fibonacci numbers until the user chooses to stop.
-
-After each number, ask if they want to see the next one.
-
-**Sample Run:**
-```
-Fibonacci sequence:
-0
-Continue? (yes/no): yes
-1
-Continue? (yes/no): yes
-1
-Continue? (yes/no): yes
-2
-Continue? (yes/no): yes
-3
-Continue? (yes/no): yes
-5
-Continue? (yes/no): no
-Goodbye!
-```
-
-**Hints:**
-- Start with `a = 0, b = 1`
-- Print a, then ask
-- Calculate next: `a, b = b, a + b`
-- Loop while answer is "yes"
-
----
-
-## Bonus Challenge: Perfect Number Finder 🌟🌟
-**Difficulty: Very Hard**
-
-A perfect number equals the sum of its divisors (excluding itself).
-Example: 6 = 1 + 2 + 3
-
-Write a program that finds all perfect numbers up to a given limit.
-
-**Sample Run:**
-```
-Find perfect numbers up to: 1000
-Perfect numbers found:
-6 (1 + 2 + 3)
-28 (1 + 2 + 4 + 7 + 14)
-496 (divisors sum to 496)
-```
-
-**Hints:**
-- For each number, find all its divisors
-- Sum the divisors
-- If sum equals the number, it's perfect
-- This requires nested while loops
-
----
-
 ## Submission Checklist
 
 - [ ] No infinite loops (tested thoroughly!)
@@ -359,7 +268,6 @@ Perfect numbers found:
 - [ ] Used appropriate loop type (while vs for)
 - [ ] Input validation where needed
 - [ ] Comments explain loop logic
-- [ ] Tested with edge cases
 
 ## Debugging Infinite Loops
 

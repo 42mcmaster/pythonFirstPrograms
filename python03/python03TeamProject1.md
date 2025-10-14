@@ -20,16 +20,17 @@ Work with **one partner** to create **two related Python programs** that demonst
 ## Technical Requirements (MUST USE)
 
 ### Required in BOTH Programs:
-- [ ] At least one `for` loop with `range()`
+- [ ] At least one loop (`for` with `range()` OR `while`)
 - [ ] At least one `if-elif-else` structure
 - [ ] User input with `input()`
-- [ ] Formatted output (tables, aligned text, or reports)
+- [ ] Clear, organized output
 - [ ] At least one accumulator pattern
 - [ ] Comments explaining complex sections
 
 ### Required in AT LEAST ONE Program:
+- [ ] A `while` loop (for input validation, menu systems, or repeated actions)
+- [ ] A `for` loop with `range()` (for counting or iterating a specific number of times)
 - [ ] Logical operators (`and`, `or`, `not`)
-- [ ] A loop that counts up or down by a step value
 - [ ] String traversal (looping through characters)
 - [ ] Nested conditionals (if inside if)
 - [ ] Lists to store data
@@ -44,7 +45,7 @@ Work with **one partner** to create **two related Python programs** that demonst
 **Program 2 (Advanced Program)**:
 - 60-100 lines of code  
 - Processes data from Program 1 or generates complex output
-- Must include formatted tables or detailed reports
+- Must include summary statistics or detailed reports
 
 ---
 
@@ -60,81 +61,88 @@ Choose ONE theme for your team. Both programs must fit your chosen theme.
 **Purpose**: Collect and validate student grades
 
 **Features Required**:
-- Ask how many students to enter
+- Use a `while` loop to keep asking if user wants to enter another student
 - For each student, collect:
   - Name
   - Number of assignments (3-5)
-  - Grade for each assignment (0-100)
-- Validate all grades are between 0-100
+  - Grade for each assignment (0-100) using a `for` loop
+- Validate all grades are between 0-100 (use `while` loop to re-prompt if invalid)
 - Calculate and display each student's average
-- Save summary to display (optional: write to file or just remember last run)
+- Keep track of total students entered
 
 **Sample Output**:
 ```
 === GRADE ENTRY SYSTEM ===
-How many students? 2
 
-Student 1:
-Name: Alice
+Student Name: Alice
 How many assignments? 3
 Assignment 1 grade: 95
 Assignment 2 grade: 88
 Assignment 3 grade: 92
-Average: 91.7
+Alice's Average: 91.7
 
-Student 2:
-Name: Bob
+Enter another student? (yes/no): yes
+
+Student Name: Bob
 How many assignments? 3
 Assignment 1 grade: 78
 Assignment 2 grade: 85
 Assignment 3 grade: 80
-Average: 81.0
+Bob's Average: 81.0
 
+Enter another student? (yes/no): no
+
+Total students entered: 2
 Data entry complete!
 ```
 
 ### Program 2: Class Statistics Report Generator
-**Purpose**: Generate comprehensive statistics and formatted reports
+**Purpose**: Generate comprehensive statistics
 
 **Features Required**:
-- Ask for number of students and their grades
+- Ask for number of students
+- Use `for` loop to collect student names and their averages
 - Calculate:
   - Class average
   - Highest and lowest grades
   - Letter grade distribution (A, B, C, D, F counts)
   - Number of passing students (60+)
-- Display formatted table with:
-  - Student name
-  - Average
-  - Letter grade
-- Show summary statistics
+- Display summary with clear labels
 
 **Sample Output**:
 ```
 === CLASS STATISTICS REPORT ===
 
-Student Name        Average    Letter
-------------------  -------    ------
-Alice                 91.7       A
-Bob                   81.0       B
-Charlie               76.5       C
+Enter number of students: 3
 
-==================================
+Student 1:
+Name: Alice
+Average: 91.7
+Letter Grade: A
+
+Student 2:
+Name: Bob
+Average: 81.0
+Letter Grade: B
+
+Student 3:
+Name: Charlie
+Average: 76.5
+Letter Grade: C
+
 CLASS SUMMARY
-==================================
-Class Average:              83.1
-Highest Average:            91.7 (Alice)
-Lowest Average:             76.5 (Charlie)
+Class Average: 83.1
+Highest Average: 91.7 (Alice)
+Lowest Average: 76.5 (Charlie)
 
 Grade Distribution:
-  A grades: 1
-  B grades: 1
-  C grades: 1
-  D grades: 0
-  F grades: 0
+A grades: 1
+B grades: 1
+C grades: 1
+D grades: 0
+F grades: 0
 
 Passing Rate: 100.0%
-==================================
 ```
 
 ---
@@ -146,39 +154,39 @@ Passing Rate: 100.0%
 
 **Features Required**:
 - Ask for team name
-- Ask how many games to enter
+- Use `while` loop to keep entering games until user is done
 - For each game:
   - Opponent name
   - Your team's score
   - Opponent's score
   - Determine win/loss/tie
 - Display game-by-game results
-- Show running win-loss record
+- Show running win-loss record after each game
 
 **Sample Output**:
 ```
 === GAME SCORE TRACKER ===
 Enter team name: Eagles
 
-How many games to enter? 3
-
-Game 1:
+Game 1
 Opponent: Hawks
 Eagles score: 21
 Hawks score: 14
 Result: WIN
-
 Current Record: 1-0-0
 
-Game 2:
+Enter another game? (yes/no): yes
+
+Game 2
 Opponent: Lions
 Eagles score: 17
-Hawks score: 17
+Lions score: 17
 Result: TIE
-
 Current Record: 1-0-1
 
-...
+Enter another game? (yes/no): no
+
+Final Record: 1-0-1
 ```
 
 ### Program 2: Season Statistics Report
@@ -186,9 +194,9 @@ Current Record: 1-0-1
 
 **Features Required**:
 - Ask for team name and number of games
-- For each game collect scores (team and opponent)
+- Use `for` loop to collect scores for each game
 - Ask for number of players
-- For each player collect:
+- Use `for` loop to collect player data:
   - Name
   - Points scored this season
   - Games played
@@ -197,7 +205,6 @@ Current Record: 1-0-1
   - Total points scored/allowed
   - Points per game average
   - Player statistics (points per game)
-- Display formatted tables and rankings
 
 **Sample Output**:
 ```
@@ -205,20 +212,16 @@ Current Record: 1-0-1
 Team: Eagles
 
 SEASON SUMMARY
-==================================
-Games Played:               10
-Record:                     7-2-1
-Points Scored:              234
-Points Allowed:             198
-Points Per Game:           23.4
-==================================
+Games Played: 10
+Record: 7-2-1
+Points Scored: 234
+Points Allowed: 198
+Points Per Game: 23.4
 
 PLAYER STATISTICS
-Player Name         Points    PPG
-------------------  ------    ----
-Mike Johnson          85      8.5
-Sarah Lee             72      7.2
-Tom Wilson            77      7.7
+Mike Johnson - 85 points (8.5 PPG)
+Sarah Lee - 72 points (7.2 PPG)
+Tom Wilson - 77 points (7.7 PPG)
 
 Top Scorer: Mike Johnson (85 points)
 ```
@@ -232,50 +235,48 @@ Top Scorer: Mike Johnson (85 points)
 
 **Features Required**:
 - Display restaurant menu (at least 6 items with prices)
-- Ask how many items customer wants
+- Use `while` loop to let customers keep adding items until done
 - For each item:
-  - Show menu with numbers
+  - Show menu
   - Let them pick by number
   - Ask for quantity
+  - Validate input (use `while` loop for bad inputs)
 - Calculate:
   - Subtotal
   - Tax (7%)
   - Tip (ask for percentage or use default 15%)
   - Total
-- Display itemized receipt with formatting
+- Display itemized receipt
 
 **Sample Output**:
 ```
 === JOE'S PIZZA - ORDER SYSTEM ===
 
 MENU:
-1. Cheese Pizza      $12.99
-2. Pepperoni Pizza   $14.99
-3. Salad             $ 6.99
-4. Breadsticks       $ 4.99
-5. Soda              $ 2.49
-6. Dessert           $ 5.99
+1. Cheese Pizza - $12.99
+2. Pepperoni Pizza - $14.99
+3. Salad - $6.99
+4. Breadsticks - $4.99
+5. Soda - $2.49
+6. Dessert - $5.99
 
-How many different items? 2
-
-Item 1:
-Enter item number: 2
+Enter item number (or 0 to finish): 2
 Quantity: 2
+Added: 2x Pepperoni Pizza
 
-Item 2:
-Enter item number: 5
+Enter item number (or 0 to finish): 5
 Quantity: 3
+Added: 3x Soda
 
-=== RECEIPT ===
-2x Pepperoni Pizza  $29.98
-3x Soda             $ 7.47
-                    ------
-Subtotal:           $37.45
-Tax (7%):           $ 2.62
-Tip (15%):          $ 5.62
-                    ------
-TOTAL:              $45.69
-=================
+Enter item number (or 0 to finish): 0
+
+RECEIPT
+2x Pepperoni Pizza - $29.98
+3x Soda - $7.47
+Subtotal: $37.45
+Tax (7%): $2.62
+Tip (15%): $5.62
+TOTAL: $45.69
 ```
 
 ### Program 2: Daily Sales Report Generator
@@ -283,45 +284,34 @@ TOTAL:              $45.69
 
 **Features Required**:
 - Ask how many orders were placed today
-- For each order collect:
-  - Number of items
-  - Order total
-- Track which menu items were most popular (ask user or simulate)
+- Use `for` loop to collect order totals
+- Track which menu items were most popular
 - Calculate:
   - Total revenue
   - Average order size
   - Number of orders in ranges (under $20, $20-40, over $40)
-  - Busiest hour (optional - or just ask for time periods)
-- Display formatted daily report
+  - Highest and lowest order
 
 **Sample Output**:
 ```
 === DAILY SALES REPORT ===
-Date: [Today's Date]
 
 SALES SUMMARY
-==================================
-Total Orders:               45
-Total Revenue:          $1,247.80
-Average Order:            $27.73
-Highest Order:            $67.45
-Lowest Order:             $12.38
-==================================
+Total Orders: 45
+Total Revenue: $1,247.80
+Average Order: $27.73
+Highest Order: $67.45
+Lowest Order: $12.38
 
 ORDER SIZE DISTRIBUTION
-Under $20:       12 orders (26.7%)
-$20-$40:         25 orders (55.6%)
-Over $40:         8 orders (17.8%)
+Under $20: 12 orders (26.7%)
+$20-$40: 25 orders (55.6%)
+Over $40: 8 orders (17.8%)
 
-POPULAR ITEMS (by orders)
-1. Pepperoni Pizza    23 orders
-2. Soda               34 orders
-3. Cheese Pizza       18 orders
-
-BUSIEST TIME PERIOD
-Lunch (11am-2pm):    28 orders
-Dinner (5pm-8pm):    17 orders
-==================================
+POPULAR ITEMS
+1. Pepperoni Pizza - 23 orders
+2. Soda - 34 orders
+3. Cheese Pizza - 18 orders
 ```
 
 ---
@@ -333,20 +323,52 @@ Dinner (5pm-8pm):    17 orders
 
 **Features Required**:
 - Ask for user name and fitness goal
-- Ask how many days to log
-- For each day:
+- Use `while` loop to keep logging workouts until user is done
+- For each workout:
   - Exercise type (run, bike, swim, weights, etc.)
   - Duration in minutes
   - Difficulty (1-5 scale)
 - Calculate daily totals
 - Determine if they met goals (30+ min = met daily goal)
-- Show daily summaries
+
+
+**Sample Output**:
+```
+=== DAILY WORKOUT LOGGER ===
+
+Welcome! What's your name? Sarah
+What's your daily fitness goal (minutes)? 30
+
+Workout 1
+Exercise type: run
+Duration (minutes): 25
+Difficulty (1-5): 3
+Logged: 25 minutes of run
+
+Log another workout? (yes/no): yes
+
+Workout 2
+Exercise type: weights
+Duration (minutes): 20
+Difficulty (1-5): 4
+Logged: 20 minutes of weights
+
+Log another workout? (yes/no): no
+
+DAILY SUMMARY
+Total workouts: 2
+Total time: 45 minutes
+Average difficulty: 3.5
+Daily goal (30 min): ACHIEVED!
+Great job, Sarah!
+```
 
 ### Program 2: Weekly Fitness Report
 **Purpose**: Analyze week of workouts with statistics
 
 **Features Required**:
-- Ask for 7 days of workout data (or fewer)
+- Ask how many days to analyze
+- Use `for` loop to collect workout data for each day
 - Collect exercise type, duration, calories burned
 - Calculate:
   - Total workout time
@@ -355,8 +377,54 @@ Dinner (5pm-8pm):    17 orders
   - Total calories burned
   - Days goal was met (30+ minutes)
   - Streak of consecutive days
-- Display formatted weekly report with progress bar
 - Give motivational message based on performance
+
+**Sample Output**:
+```
+=== WEEKLY FITNESS REPORT ===
+
+How many days to analyze? 5
+
+Day 1
+Exercise type: run
+Duration (minutes): 30
+Calories burned: 250
+
+Day 2
+Exercise type: bike
+Duration (minutes): 45
+Calories burned: 320
+
+Day 3
+Exercise type: run
+Duration (minutes): 25
+Calories burned: 200
+
+Day 4
+Exercise type: weights
+Duration (minutes): 35
+Calories burned: 180
+
+Day 5
+Exercise type: run
+Duration (minutes): 40
+Calories burned: 310
+
+WEEKLY SUMMARY
+Total workout time: 175 minutes
+Average workout: 35 minutes
+Total calories burned: 1,260
+Days goal met (30+ min): 4 out of 5 (80%)
+Longest streak: 4 consecutive days
+
+Most common exercise: run (3 times)
+
+PERFORMANCE REVIEW
+Excellent work! You're staying consistent with your fitness routine.
+Your running is really strong - consider varying your workouts more.
+Keep up the great work!
+
+```
 
 ---
 
@@ -367,7 +435,7 @@ Dinner (5pm-8pm):    17 orders
 
 **Features Required**:
 - Choose collection type (movies or games)
-- Ask how many items to add
+- Use `while` loop to keep adding items until done
 - For each item collect:
   - Title
   - Genre
@@ -377,11 +445,61 @@ Dinner (5pm-8pm):    17 orders
 - Display collection summary
 - Count items by genre
 
+
+**Sample Output**:
+```
+=== COLLECTION ENTRY SYSTEM ===
+
+Collection type (movies/games): games
+
+Item 1
+Title: The Legend of Zelda
+Genre: Adventure
+Rating (1-10): 10
+Year: 2017
+Status (owned/wishlist): owned
+Added to collection!
+
+Add another item? (yes/no): yes
+
+Item 2
+Title: Minecraft
+Genre: Sandbox
+Rating (1-10): 9
+Year: 2011
+Status (owned/wishlist): owned
+Added to collection!
+
+Add another item? (yes/no): yes
+
+Item 3
+Title: Elden Ring
+Genre: Adventure
+Rating (1-10): 9
+Year: 2022
+Status (owned/wishlist): wishlist
+Added to collection!
+
+Add another item? (yes/no): no
+
+COLLECTION SUMMARY
+Total items: 3
+Owned: 2
+Wishlist: 1
+
+Items by Genre:
+Adventure: 2
+Sandbox: 1
+
+Collection saved!
+```
+
 ### Program 2: Collection Statistics & Recommender
 **Purpose**: Analyze collection and make recommendations
 
 **Features Required**:
-- Enter collection data (title, genre, rating, year)
+- Ask how many items to analyze
+- Use `for` loop to enter collection data (title, genre, rating, year)
 - Calculate statistics:
   - Total items in collection
   - Average rating
@@ -389,34 +507,92 @@ Dinner (5pm-8pm):    17 orders
   - Oldest and newest items
   - Highest and lowest rated
 - Find genre with most items
-- Display formatted tables
 - Make recommendations based on favorite genres
+
+**Sample Output**:
+```
+=== COLLECTION STATISTICS & RECOMMENDER ===
+
+How many items to analyze? 5
+
+Item 1
+Title: The Legend of Zelda
+Genre: Adventure
+Rating (1-10): 10
+Year: 2017
+
+Item 2
+Title: Minecraft
+Genre: Sandbox
+Rating (1-10): 9
+Year: 2011
+
+Item 3
+Title: Elden Ring
+Genre: Adventure
+Rating (1-10): 9
+Year: 2022
+
+Item 4
+Title: Mario Kart 8
+Genre: Racing
+Rating (1-10): 8
+Year: 2014
+
+Item 5
+Title: Dark Souls 3
+Genre: Adventure
+Rating (1-10): 9
+Year: 2016
+
+COLLECTION STATISTICS
+Total items: 5
+Average rating: 9.0
+
+Genre Breakdown:
+Adventure: 3 items (60%)
+Sandbox: 1 item (20%)
+Racing: 1 item (20%)
+
+Collection Highlights:
+Oldest: Minecraft (2011)
+Newest: Elden Ring (2022)
+Highest rated: The Legend of Zelda (10/10)
+Lowest rated: Mario Kart 8 (8/10)
+
+RECOMMENDATIONS
+Your favorite genre is Adventure!
+Based on your collection, you might enjoy:
+- More adventure games like Breath of the Wild or Skyrim
+- Try RPG games since you enjoy story-driven adventures
+- You rated everything highly - you have great taste!
+```
 
 ---
 
-## Grading Rubric (100 points)
+## Grading Rubric (40 points)
 
-### Functionality (40 points)
-- [ ] Both programs run without errors (10 pts)
-- [ ] All required features work correctly (15 pts)
-- [ ] User input is validated appropriately (8 pts)
-- [ ] Programs produce correct output (7 pts)
+### Functionality (15 points)
+- [ ] Both programs run without errors 
+- [ ] All required features work correctly 
+- [ ] User input is validated appropriately 
+- [ ] Programs produce correct output 
 
-### Code Quality (30 points)
-- [ ] Uses all required Python concepts (10 pts)
-- [ ] Code is organized and readable (8 pts)
-- [ ] Meaningful variable names (5 pts)
-- [ ] Includes helpful comments (7 pts)
+### Code Quality (10 points)
+- [ ] Uses all required Python concepts 
+- [ ] Code is organized and readable 
+- [ ] Meaningful variable names 
+- [ ] Includes helpful comments 
 
-### Design & Output (20 points)
-- [ ] Output is formatted and easy to read (10 pts)
-- [ ] User interface is clear and friendly (5 pts)
-- [ ] Creativity and extra features (5 pts)
+### Design & Output (10 points)
+- [ ] Output is clear and organized
+- [ ] User interface is intuitive 
+- [ ] Creativity and extra features 
 
-### Teamwork & Documentation (10 points)
-- [ ] Both partners contributed (3 pts)
-- [ ] GitHub repo is organized (3 pts)
-- [ ] README file explains programs (4 pts)
+### Teamwork & Documentation (5 points)
+- [ ] Both partners contributed 
+- [ ] GitHub repo is organized 
+- [ ] README file explains programs 
 
 ## Deliverables
 
@@ -434,70 +610,62 @@ Dinner (5pm-8pm):    17 orders
 2. **Brief Presentation** (5 minutes):
    - Demonstrate both programs
    - Explain one interesting technical challenge
-   - Show formatted output
+   - Show how your programs work together
    - Answer questions
 
 ## Planning Template
 
-Use this in your first planning session:
+Use this checklist in your first planning session:
 
 ```
-TEAM PROJECT PLANNING
-
-Team Members:
-1. _______________
-2. _______________
-
-Theme Chosen: _______________
-
-Program 1: _______________
-Main Purpose: _______________
-Key Features:
-- 
--
--
-
-Program 2: _______________
-Main Purpose: _______________
-Key Features:
--
--
--
-
-Division of Work:
-Partner 1 Focus: _______________
-Partner 2 Focus: _______________
-Shared Responsibilities: _______________
-
 Required Python Concepts Checklist:
 [ ] For loops with range()
+[ ] While loops
 [ ] If-elif-else statements
 [ ] Logical operators
 [ ] Accumulator pattern
-[ ] Formatted output
+[ ] Input validation
 [ ] String traversal
 [ ] Lists
-[ ] Input validation
 ```
 
 ## Tips for Success
 
 1. **Start Simple**: Get a basic version working first, then add features
 2. **Test Often**: Run your program after every few lines
-3. **Communicate**: Check in with your partner regularly
-4. **Comment As You Go**: Don't wait until the end
-5. **Handle Bad Input**: Use if statements to validate user input
-6. **Format Output**: Tables and reports should be neat and aligned
-7. **Ask for Help**: Use your teacher and classmates as resources
+3. **Use While Loops Wisely**: Great for menus, input validation, and "keep going?" prompts
+4. **Use For Loops for Counting**: When you know how many times to loop, use `for` with `range()`
+5. **Communicate**: Check in with your partner regularly
+6. **Comment As You Go**: Don't wait until the end
+7. **Handle Bad Input**: Use `while` loops to re-prompt for valid input
+8. **Ask for Help**: Use your teacher and classmates as resources
 
-## Extra Credit Opportunities (+10 points max)
+## While Loop Examples
 
-- [ ] Write data to a file and read it back (+5 pts)
-- [ ] Create a third bonus program that uses both programs together (+5 pts)
-- [ ] Add color to output using ANSI codes (+3 pts)
-- [ ] Create ASCII art for your program interface (+2 pts)
-- [ ] Add data visualization (simple text-based charts) (+5 pts)
+**Input Validation:**
+```python
+grade = -1
+while grade < 0 or grade > 100:
+    grade = int(input("Enter grade (0-100): "))
+```
+
+**Menu System:**
+```python
+choice = ""
+while choice != "quit":
+    print("1. Add item")
+    print("2. View items")
+    choice = input("Enter choice: ")
+```
+
+**Keep Going Pattern:**
+```python
+continue_program = "yes"
+while continue_program == "yes":
+    # do something
+    continue_program = input("Continue? (yes/no): ")
+```
 
 ---
 
-Good luck! Remember: this project tests everything you've learned about loops, conditionals, and formatted output. Make it interesting, make it work, and most importantly—work together!
+Good luck! Remember: this project tests everything you've learned about loops, conditionals, and input validation. Make it interesting, make it work, and most importantly—work together!

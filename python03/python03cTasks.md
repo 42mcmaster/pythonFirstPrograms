@@ -1,4 +1,4 @@
-# Lesson 3c Tasks: String Traversal and Formatting Practice
+# Lesson 3c Tasks: String Traversal and More Practice
 
 ## Setup
 Complete these tasks in IDLE or VS Code. Test with various inputs!
@@ -58,51 +58,47 @@ Vowels: 3
 Consonants: 7
 ```
 
-**Hints:**
-- Keep two separate counters
-- Check if character is in "aeiouAEIOU" for vowels
-- Check if character.isalpha() for letters
-- Consonants = letters that aren't vowels
+**Pseudocode:**
+```python
+SET vowels = 0
+SET consonants = 0
+
+INPUT text
+
+FOR each character IN text:
+    IF character is a letter THEN (use char.isalpha)
+        CONVERT character to lowercase
+        IF character is in "aeiou" THEN
+            ADD 1 to vowels
+        ELSE
+            ADD 1 to consonants
+        ENDIF
+    ENDIF
+ENDFOR
+
+DISPLAY "Vowels:", vowels
+DISPLAY "Consonants:", consonants
+```
 
 ---
 
-## Task 4: Powers Table 
+## Task 4: Price List Formatter 
 **Difficulty: Medium**
 
-Create a formatted table showing powers of 2 from 2⁰ to 2¹⁰.
+Write a program that asks the user for 3 items and their prices, then displays each item’s price and tax (at 6%).
 
-**Expected Output:**
-```
-Exponent    Value
---------    -----
-   0            1
-   1            2
-   2            4
-   3            8
-   4           16
-   5           32
-   6           64
-   7          128
-   8          256
-   9          512
-  10         1024
-```
+## Hints
+1. Ask the user to enter the **name** of 3 items.  
+2. Ask for the **price** of each item.  
+3. Calculate the **tax** for each item (`price * 0.06`).  
+4. Display each item’s name, price, and tax using normal print statements.  
+5. Store the user’s answers in separate variables like `item1`, `price1`, etc.  
+6. Use `float()` when asking for prices so you can do math with them.  
+7. Use `round(value, 2)` to limit your decimals to 2 places.  
 
-**Hints:**
-- Use a for loop with range(11)
-- Calculate 2**exponent for each value
-- Use format string: `"%4d %8d"`
-- Print header and separator first
-
----
-
-## Task 5: Price List Formatter 
-**Difficulty: Medium**
-
-Write a program that displays a formatted price list.
-
-Ask the user for 3 items and 3 prices, then display them in a table with tax calculated at 6%.
-
+- Example of displaying a result:
+  ```python
+  print(item1, "costs $", round(price1, 2), "with tax $", round(tax1, 2))
 **Sample Run:**
 ```
 Enter item 1: Pen
@@ -112,22 +108,15 @@ Enter price 2: 3.25
 Enter item 3: Eraser
 Enter price 3: 0.75
 
-Item          Price    Tax
------------- -------- --------
-Pen          $   1.50 $   0.09
-Notebook     $   3.25 $   0.20
-Eraser       $   0.75 $   0.05
-```
+Pen costs $ 1.5 with tax $ 0.09
+Notebook costs $ 3.25 with tax $ 0.19
+Eraser costs $ 0.75 with tax $ 0.05
 
-**Hints:**
-- Store items in a list
-- Store prices in a list
-- Use format string: `"%-12s $%7.2f $%7.2f"`
-- Calculate tax: `price * 0.06`
+```
 
 ---
 
-## Task 6: Reverse String Builder 
+## Task 5: Reverse String Builder 
 **Difficulty: Medium**
 
 Create a program that reverses a string using a for loop.
@@ -145,184 +134,67 @@ nohtyP
 
 ---
 
-## Task 7: Character Frequency 
+## Task 6: Report Card Generator 
 **Difficulty: Hard**
 
-Write a program that counts the frequency of each unique character in a text (ignoring spaces).
+Write a program that generates a simple **report card** for a student.
 
-**Sample Run:**
+## Hints
+1. Ask the user for the **student’s name**.  
+2. Ask for **5 subject names**.  
+3. Ask for **5 grades** (out of 100).  
+4. After all grades are entered, display:  
+   - Each subject and its grade  
+   - The **average grade**  
+   - The **letter grade**, based on:  
+     - A: 90+  
+     - B: 80–89  
+     - C: 70–79  
+     - D: 60–69  
+     - F: below 60  
+     
+5. Use two lists:  
+  ```python
+  subjects = []
+  grades = []
 ```
-Enter text: hello world
-Character frequencies:
-h: 1
-e: 1
-l: 3
-o: 2
-w: 1
-r: 1
-d: 1
+
+6. Use a loop to collect the 5 subjects and grades.
+7. Use sum(grades) / len(grades) to find the average.
+8. Use if-elif statements to assign the letter grade.
+9. When printing, you can keep it simple:
+
+```python
+print(subjects[i], "grade is", grades[i])
 ```
-
-**Hints:**
-- Keep track of characters you've already counted
-- For each unique character, count how many times it appears
-- Skip spaces
-- Use nested loops or create a list of seen characters
-
----
-
-## Task 8: Report Card Generator 
-**Difficulty: Hard**
-
-Create a program that generates a formatted report card.
-
-Ask for:
-- Student name
-- 5 subject names
-- 5 grades (out of 100)
-
-Display a formatted report with:
-- Each subject and grade
-- Average grade
-- Letter grade (A: 90+, B: 80+, C: 70+, D: 60+, F: below 60)
-
-**Sample Run:**
-```
+**Example Output**
+ ```python
 Student name: Alex Smith
 
 Enter subject 1: Math
 Enter grade 1: 95
-
-(... continue for 5 subjects ...)
+Enter subject 2: Science
+Enter grade 2: 88
+Enter subject 3: English
+Enter grade 3: 92
+Enter subject 4: History
+Enter grade 4: 85
+Enter subject 5: PE
+Enter grade 5: 90
 
 REPORT CARD
-==================================
 Student: Alex Smith
 
-Subject             Grade
------------------  -------
-Math                  95
-Science               88
-English               92
-History               85
-PE                    90
------------------  -------
-Average:              90.0
-Letter Grade: A
-```
+Math grade is 95
+Science grade is 88
+English grade is 92
+History grade is 85
+PE grade is 90
 
-**Hints:**
-- Use lists to store subjects and grades
-- Calculate average after collecting all grades
-- Use if-elif statements for letter grade
-- Format with `"%-18s %7.0f"`
+Average grade: 90.0
+Letter grade: A
 
----
-
-## Task 9: Caesar Cipher Encoder 
-**Difficulty: Hard**
-
-Write a program that encodes text using a simple Caesar cipher (shift each letter by a certain amount).
-
-**Sample Run:**
-```
-Enter text: HELLO
-Enter shift amount: 3
-Encoded text: KHOOR
-```
-
-**Requirements:**
-- Only shift letters (A-Z, a-z)
-- Keep other characters unchanged
-- Handle wrap-around (Z+1 = A)
-
-**Hints:**
-- Use `ord()` to get ASCII value: `ord('A')` = 65
-- Use `chr()` to convert back: `chr(65)` = 'A'
-- Shift formula: `new_value = ((old_value - 65 + shift) % 26) + 65`
-- Handle uppercase and lowercase separately
-
----
-
-## Challenge Task: Paycheck Formatter 
-**Difficulty: Challenge**
-
-Create a paycheck stub generator that:
-1. Asks for employee name
-2. Asks for hours worked
-3. Asks for hourly rate
-4. Calculates gross pay (with overtime at 1.5x after 40 hours)
-5. Calculates deductions:
-   - Tax: 20% of gross
-   - Insurance: $50
-   - Retirement: 5% of gross
-6. Displays formatted paycheck stub
-
-**Sample Run:**
-```
-Employee name: Jane Doe
-Hours worked: 45
-Hourly rate: 20.00
-
-================================
-PAYCHECK STUB
-================================
-Employee: Jane Doe
-
-Regular hours:    40.0 @ $20.00 = $  800.00
-Overtime hours:    5.0 @ $30.00 = $  150.00
-                                   ---------
-Gross Pay:                         $  950.00
-
-Deductions:
-  Federal Tax (20%):               $  190.00
-  Insurance:                       $   50.00
-  Retirement (5%):                 $   47.50
-                                   ---------
-Total Deductions:                  $  287.50
-
-NET PAY:                           $  662.50
-================================
-```
-
-**Hints:**
-- Calculate overtime hours: `max(0, hours - 40)`
-- Use format strings for alignment
-- All money should show 2 decimal places
-- Build it step by step - test each section
-
----
-
-## Bonus Challenge: Text Statistics 
-**Difficulty: Very Hard**
-
-Create a comprehensive text analyzer that shows:
-- Total characters (including spaces)
-- Total characters (excluding spaces)
-- Total words
-- Total sentences (count periods, question marks, exclamation marks)
-- Average word length
-- Longest word
-- Most common character (excluding spaces)
-
-Display results in a nicely formatted report.
-
-**Sample Run:**
-```
-Enter text: The quick brown fox jumps over the lazy dog!
-
-TEXT ANALYSIS REPORT
-========================================
-Total characters (with spaces):     44
-Total characters (no spaces):       35
-Total words:                         9
-Total sentences:                     1
-Average word length:              3.9 letters
-Longest word:                     quick
-
-Most common character: o (appears 4 times)
-========================================
-```
+ ```
 
 ---
 
@@ -334,10 +206,4 @@ Most common character: o (appears 4 times)
 - [ ] Use meaningful variable names
 - [ ] Add comments explaining complex sections
 - [ ] Save each task as a separate .py file
-
-## Common Formatting Mistakes to Avoid
-
-1. Forgetting the `%` operator: `"Value: %d" (number)` ❌
-2. Wrong number of values: `"%d %d" % (5)` ❌ Should be `% (5, 6)`
-3. Type mismatch: `"%d" % 3.14` ❌ Use `%f` for floats
-4. Negative width on wrong side: `%5-d` ❌ Should be `%-5d`
+- [ ] Submit to your GitHub Rep just like previous assignments
