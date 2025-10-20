@@ -5,7 +5,7 @@ These tasks combine everything from Chapter 3. Test thoroughly!
 
 ---
 
-## Task 1: Dice Roller ⭐
+## Task 1: Dice Roller 
 **Difficulty: Easy**
 
 Write a program that simulates rolling a six-sided die 10 times and displays the results.
@@ -23,7 +23,7 @@ Rolling a die 10 times:
 
 ---
 
-## Task 2: Coin Flip Simulator ⭐
+## Task 2: Coin Flip Simulator 
 **Difficulty: Easy**
 
 Create a program that simulates flipping a coin 20 times and counts heads and tails.
@@ -43,7 +43,7 @@ Tails: 9
 
 ---
 
-## Task 3: Random Number Guesser ⭐⭐
+## Task 3: Random Number Guesser 
 **Difficulty: Medium**
 
 Write a program where the computer guesses YOUR number!
@@ -67,7 +67,7 @@ I got it in 3 guesses!
 
 ---
 
-## Task 4: Lottery Number Generator ⭐⭐
+## Task 4: Lottery Number Generator 
 **Difficulty: Medium**
 
 Create a program that generates 6 unique lottery numbers between 1 and 49.
@@ -86,7 +86,7 @@ Your lottery numbers: 7 23 15 42 8 31
 
 ---
 
-## Task 5: Higher or Lower Game ⭐⭐
+## Task 5: Higher or Lower Game 
 **Difficulty: Medium**
 
 Create a game where:
@@ -117,7 +117,7 @@ Score: 1 wins, 1 loss
 
 ---
 
-## Task 6: Random Math Quiz ⭐⭐⭐
+## Task 6: Random Math Quiz 
 **Difficulty: Hard**
 
 Write a program that:
@@ -149,7 +149,7 @@ Score: 8 out of 10 (80%)
 
 ---
 
-## Task 7: Random Walk Simulation ⭐⭐⭐
+## Task 7: Random Walk Simulation 
 **Difficulty: Hard**
 
 Simulate a "random walk" where you:
@@ -178,7 +178,7 @@ Final position: -12
 
 ---
 
-## Task 8: Rock-Paper-Scissors Tournament ⭐⭐⭐
+## Task 8: Rock-Paper-Scissors Tournament 
 **Difficulty: Hard**
 
 Create an enhanced rock-paper-scissors game:
@@ -212,7 +212,7 @@ You win the tournament!
 
 ---
 
-## Task 9: Password Generator ⭐⭐⭐
+## Task 9: Password Generator 
 **Difficulty: Hard**
 
 Create a random password generator that:
@@ -237,7 +237,7 @@ Generated password: aB7#xK2$mP9!
 
 ---
 
-## Task 10: Number Statistics Analyzer ⭐⭐⭐
+## Task 10: Number Statistics Analyzer 
 **Difficulty: Hard**
 
 Write a program that:
@@ -269,108 +269,6 @@ Odd numbers: 48
 - Use % 2 to check even/odd
 
 ---
-
-## Challenge Task 1: Dice Game (Pig) 🌟
-**Difficulty: Challenge**
-
-Create the dice game "Pig":
-- Players take turns rolling a die
-- Add up your rolls
-- You can keep rolling or "hold" to bank your points
-- BUT if you roll a 1, you lose all points for that turn
-- First to 50 wins
-
-**Sample Run:**
-```
-PLAYER 1's turn (Score: 0)
-Roll: 4 (Turn total: 4) - (r)oll or (h)old? r
-Roll: 5 (Turn total: 9) - (r)oll or (h)old? r
-Roll: 3 (Turn total: 12) - (r)oll or (h)old? h
-Player 1 banks 12 points. (Total: 12)
-
-PLAYER 2's turn (Score: 0)
-Roll: 6 (Turn total: 6) - (r)oll or (h)old? r
-Roll: 1 - Busted! You lose 6 points.
-Player 2 scores 0 points. (Total: 0)
-...
-```
-
-**Hints:**
-- Use nested loops (game loop, turn loop)
-- Check for "1" rolled
-- Track scores for both players
-- Switch turns
-
----
-
-## Challenge Task 2: Monte Carlo Pi Estimation 🌟
-**Difficulty: Challenge**
-
-Use random numbers to estimate π (pi):
-- Generate random points in a 1x1 square
-- Count how many fall inside a quarter circle
-- Ratio approximates π/4
-- Use many points (10,000+) for better accuracy
-
-**Sample Output:**
-```
-Estimating Pi with 10000 random points...
-Points inside circle: 7854
-Points outside circle: 2146
-Estimated Pi: 3.1416
-Actual Pi: 3.1416
-Error: 0.01%
-```
-
-**Hints:**
-- Generate random x and y between 0 and 1
-- Point is inside if: `x² + y² <= 1`
-- `pi ≈ 4 * (inside_count / total_count)`
-- Import math to compare with actual pi
-
----
-
-## Final Project: Complete Game System 🌟🌟
-**Difficulty: Very Hard**
-
-Create a game collection program with a menu:
-
-```
-=== GAME COLLECTION ===
-1. Number Guessing Game
-2. Rock-Paper-Scissors
-3. Dice Rolling Game
-4. Math Quiz
-5. View High Scores
-6. Exit
-
-Choice: 
-```
-
-Requirements:
-- Implement at least 3 complete games
-- Track high scores/statistics
-- Professional menu system
-- Input validation
-- Play again options
-- Polished user experience
-
-**Hints:**
-- Use functions for each game
-- Use a main menu loop
-- Store scores in variables (or file, advanced!)
-- Lots of loops and selection statements!
-
----
-
-## Submission Guidelines
-
-For your final submission, include:
-
-1. **All completed tasks** (separate .py files)
-2. **Comments** explaining your logic
-3. **Test notes** showing you tested edge cases
-4. **One "best work" program** - pick your favorite and polish it!
 
 ## Testing Checklist for Random Programs
 
@@ -406,4 +304,4 @@ You've completed Chapter 3! You now have powerful programming tools:
 - **Selection** to make choices
 - **Random** to add unpredictability
 
-These are the building blocks of most programs. Great job! 🎉
+These are the building blocks of most programs. Great job! 

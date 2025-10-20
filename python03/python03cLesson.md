@@ -5,7 +5,7 @@
 - Traverse characters in a string using for loops
 - Use basic string methods
 
-## 💡 Why This Lesson Matters: Real-World Applications
+##  Why This Lesson Matters: Real-World Applications
 
 **String traversal** (looping through characters) is everywhere in programming:
 

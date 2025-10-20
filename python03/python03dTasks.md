@@ -5,7 +5,7 @@ Complete these tasks in IDLE or VS Code. Test thoroughly with different inputs!
 
 ---
 
-## Task 1: Positive Number Checker ⭐
+## Task 1: Positive Number Checker 
 **Difficulty: Easy**
 
 Write a program that asks for a number and prints "That's positive!" only if the number is greater than 0.
@@ -28,7 +28,7 @@ Enter a number: -3
 
 ---
 
-## Task 2: Even or Odd ⭐
+## Task 2: Even or Odd 
 **Difficulty: Easy**
 
 Create a program that determines if a number is even or odd.
@@ -46,7 +46,7 @@ Enter a number: 7
 
 ---
 
-## Task 3: Voting Eligibility ⭐
+## Task 3: Voting Eligibility 
 **Difficulty: Easy**
 
 Write a program that checks if someone can vote (must be 18 or older).
@@ -69,7 +69,7 @@ You are eligible to vote!
 
 ---
 
-## Task 4: Temperature Advisory ⭐⭐
+## Task 4: Temperature Advisory 
 **Difficulty: Medium**
 
 Create a program that gives different advice based on temperature:
@@ -88,7 +88,7 @@ It's hot! Stay hydrated.
 
 ---
 
-## Task 5: Grade Pass/Fail with Comments ⭐⭐
+## Task 5: Grade Pass/Fail with Comments 
 **Difficulty: Medium**
 
 Write a program that:
@@ -115,7 +115,7 @@ You needed 5 more points.
 
 ---
 
-## Task 6: Shopping Discount ⭐⭐
+## Task 6: Shopping Discount 
 **Difficulty: Medium**
 
 Create a discount calculator:
@@ -166,7 +166,7 @@ Enter second number: 23
 
 ---
 
-## Task 8: Speed Limit Checker ⭐⭐⭐
+## Task 8: Speed Limit Checker 
 **Difficulty: Hard**
 
 Create a program that checks if a driver is speeding:
@@ -196,7 +196,7 @@ Fine: $300
 
 ---
 
-## Task 9: BMI Calculator ⭐⭐⭐
+## Task 9: BMI Calculator 
 **Difficulty: Hard**
 
 Write a BMI (Body Mass Index) calculator that:
@@ -221,7 +221,7 @@ You are at a healthy weight.
 
 ---
 
-## Task 10: Simple Password Checker ⭐⭐⭐
+## Task 10: Simple Password Checker 
 **Difficulty: Hard**
 
 Create a basic password validation program:
@@ -246,68 +246,6 @@ Password accepted!
 - Use `len(password)` to get length
 - Check if `len(password) >= 8`
 - Calculate needed: `8 - len(password)`
-
----
-
-## Challenge Task: Quadratic Solver 🌟
-**Difficulty: Challenge**
-
-Write a program that solves a quadratic equation (ax² + bx + c = 0):
-- Ask for a, b, and c
-- Calculate discriminant: b² - 4ac
-- If discriminant is negative: print "No real solutions"
-- Otherwise: calculate and print the solutions using the quadratic formula
-
-Quadratic formula: x = (-b ± √(b² - 4ac)) / (2a)
-
-**Sample Run:**
-```
-Enter a: 1
-Enter b: -5
-Enter c: 6
-Solution 1: 3.0
-Solution 2: 2.0
-```
-
-**Hints:**
-- Import math for sqrt
-- Calculate discriminant first
-- If discriminant >= 0, calculate both solutions:
-  - `x1 = (-b + sqrt(discriminant)) / (2*a)`
-  - `x2 = (-b - sqrt(discriminant)) / (2*a)`
-
----
-
-## Bonus Challenge: Triangle Validator 🌟
-**Difficulty: Challenge**
-
-Create a program that checks if three sides can form a valid triangle.
-
-**Triangle Rule:** The sum of any two sides must be greater than the third side.
-
-**Sample Run 1:**
-```
-Enter side 1: 3
-Enter side 2: 4
-Enter side 3: 5
-These sides can form a valid triangle!
-```
-
-**Sample Run 2:**
-```
-Enter side 1: 1
-Enter side 2: 2
-Enter side 3: 10
-These sides cannot form a triangle.
-```
-
-**Hints:**
-- Check three conditions:
-  - `a + b > c`
-  - `a + c > b`
-  - `b + c > a`
-- All three must be true
-- Can use nested ifs or logical operators (next lesson)
 
 ---
 

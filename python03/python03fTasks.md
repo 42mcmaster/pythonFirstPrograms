@@ -5,7 +5,7 @@ Complete these tasks in IDLE or VS Code. Focus on using compound conditions!
 
 ---
 
-## Task 1: Valid Range Checker ⭐
+## Task 1: Valid Range Checker 
 **Difficulty: Easy**
 
 Write a program that checks if a number is between 1 and 100 (inclusive).
@@ -28,7 +28,7 @@ Enter a number: 150
 
 ---
 
-## Task 2: Weekend Detector ⭐
+## Task 2: Weekend Detector 
 **Difficulty: Easy**
 
 Create a program that checks if a day is a weekend day.
@@ -45,7 +45,7 @@ It's the weekend!
 
 ---
 
-## Task 3: Password Validator ⭐⭐
+## Task 3: Password Validator 
 **Difficulty: Medium**
 
 Write a program that checks if a password is valid. A valid password must:
@@ -66,7 +66,7 @@ Password is valid!
 
 ---
 
-## Task 4: Triangle Validity Checker ⭐⭐
+## Task 4: Triangle Validity Checker 
 **Difficulty: Medium**
 
 Create a program that checks if three sides can form a valid triangle.
@@ -89,7 +89,7 @@ These sides form a valid triangle!
 
 ---
 
-## Task 5: Leap Year Checker ⭐⭐
+## Task 5: Leap Year Checker 
 **Difficulty: Medium**
 
 Write a program that determines if a year is a leap year using logical operators.
@@ -109,7 +109,7 @@ Enter a year: 2024
 
 ---
 
-## Task 6: Grade Calculator with Validation ⭐⭐
+## Task 6: Grade Calculator with Validation 
 **Difficulty: Medium**
 
 Create a program that converts a numeric grade to a letter, but first validates that the grade is between 0 and 100.
@@ -129,7 +129,7 @@ Error: Grade must be between 0 and 100.
 
 ---
 
-## Task 7: Age Category Classifier ⭐⭐⭐
+## Task 7: Age Category Classifier 
 **Difficulty: Hard**
 
 Write a program that classifies age into categories:
@@ -153,7 +153,7 @@ You are an adult.
 
 ---
 
-## Task 8: Safe Division Calculator ⭐⭐⭐
+## Task 8: Safe Division Calculator 
 **Difficulty: Hard**
 
 Create a calculator that:
@@ -176,7 +176,7 @@ Error: Cannot divide by zero!
 
 ---
 
-## Task 9: Parking Permit Validator ⭐⭐⭐
+## Task 9: Parking Permit Validator 
 **Difficulty: Hard**
 
 Write a program for a parking garage that checks if someone can park.
@@ -204,7 +204,7 @@ You may park!
 
 ---
 
-## Task 10: Character Type Identifier ⭐⭐⭐
+## Task 10: Character Type Identifier 
 **Difficulty: Hard**
 
 Create a program that identifies what type of character was entered:
@@ -222,90 +222,6 @@ Enter a character: @
 **Hints:**
 - Use: `char >= 'a' and char <= 'z'`
 - Or use: `char.islower()`, `char.isupper()`, `char.isdigit()`
-
----
-
-## Challenge Task 1: Login System 🌟
-**Difficulty: Challenge**
-
-Create a secure login system with these features:
-- Maximum 3 attempts
-- Correct username AND password required
-- After 3 failed attempts, lock the account
-- Show remaining attempts after each failure
-
-**Sample Run:**
-```
-Attempt 1 of 3
-Username: admin
-Password: wrong
-Login failed. 2 attempts remaining.
-
-Attempt 2 of 3
-Username: admin
-Password: password123
-Login successful!
-Welcome, admin!
-```
-
-**Hints:**
-- Use a while loop with compound condition
-- `attempts < 3 and not logged_in`
-- Check: `username == correct_user and password == correct_pass`
-
----
-
-## Challenge Task 2: Date Validator 🌟
-**Difficulty: Challenge**
-
-Write a program that validates a date (month/day/year):
-- Month must be 1-12
-- Day must be valid for the month
-  - Jan, Mar, May, Jul, Aug, Oct, Dec: 1-31
-  - Apr, Jun, Sep, Nov: 1-30
-  - Feb: 1-29 (if leap year), 1-28 (if not)
-- Year must be positive
-
-**Sample Run:**
-```
-Enter month (1-12): 2
-Enter day: 30
-Enter year: 2024
-Invalid date: February doesn't have 30 days.
-```
-
-**Hints:**
-- Lots of compound conditions!
-- Check month first, then valid days for that month
-- Use leap year logic for February
-
----
-
-## Bonus Challenge: Complex Discount Calculator 🌟🌟
-**Difficulty: Very Hard**
-
-Create a discount calculator with these rules:
-- 10% discount if total >= $100
-- Additional 5% if customer is a member
-- Additional 10% if it's a holiday
-- Show original price, all discounts applied, and final price
-
-**Sample Run:**
-```
-Enter total: $150
-Member? (yes/no): yes
-Holiday? (yes/no): yes
-Original price: $150.00
-Bulk discount (10%): $15.00
-Member discount (5%): $7.50
-Holiday discount (10%): $15.00
-Final price: $112.50
-```
-
-**Hints:**
-- Apply discounts sequentially to running total
-- Each discount may or may not apply
-- Use compound conditions to determine which discounts apply
 
 ---
 

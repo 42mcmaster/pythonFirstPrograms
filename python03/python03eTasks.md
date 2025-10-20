@@ -5,7 +5,7 @@ Complete these tasks in IDLE or VS Code. Remember to test with various inputs!
 
 ---
 
-## Task 1: Day of the Week ⭐
+## Task 1: Day of the Week 
 **Difficulty: Easy**
 
 Write a program that takes a number (1-7) and prints the corresponding day of the week.
@@ -25,7 +25,7 @@ Thursday
 
 ---
 
-## Task 2: Letter Grade with Plus/Minus ⭐⭐
+## Task 2: Letter Grade with Plus/Minus 
 **Difficulty: Medium**
 
 Create a more detailed grade converter that includes + and - grades:
@@ -53,7 +53,7 @@ Your letter grade is: B+
 
 ---
 
-## Task 3: Shipping Calculator ⭐⭐
+## Task 3: Shipping Calculator 
 **Difficulty: Medium**
 
 Write a program that calculates shipping costs based on weight:
@@ -80,7 +80,7 @@ Shipping cost: $17.50
 
 ---
 
-## Task 4: Season Identifier ⭐⭐
+## Task 4: Season Identifier 
 **Difficulty: Medium**
 
 Create a program that identifies the season based on the month number (1-12):
@@ -101,7 +101,7 @@ Summer
 
 ---
 
-## Task 5: Triangle Type Classifier ⭐⭐⭐
+## Task 5: Triangle Type Classifier 
 **Difficulty: Hard**
 
 Write a program that classifies a triangle based on side lengths:
@@ -128,7 +128,7 @@ This is an equilateral triangle.
 
 ---
 
-## Task 6: Tax Bracket Calculator ⭐⭐⭐
+## Task 6: Tax Bracket Calculator 
 **Difficulty: Hard**
 
 Create a tax calculator that uses these brackets:
@@ -154,7 +154,7 @@ Tax owed: $11,000.00
 
 ---
 
-## Task 7: Water State Identifier ⭐⭐
+## Task 7: Water State Identifier 
 **Difficulty: Medium**
 
 Write a program that identifies the state of water based on temperature in Celsius:
@@ -176,7 +176,7 @@ Water is in a liquid state.
 
 ---
 
-## Task 8: Movie Ticket Pricer ⭐⭐⭐
+## Task 8: Movie Ticket Pricer 
 **Difficulty: Hard**
 
 Create a movie ticket pricing system:
@@ -201,7 +201,7 @@ Ticket price: $10.00
 
 ---
 
-## Task 9: Grade Point Average ⭐⭐⭐
+## Task 9: Grade Point Average 
 **Difficulty: Hard**
 
 Write a program that converts letter grades to GPA points:
@@ -231,7 +231,7 @@ Your GPA is: 3.6
 
 ---
 
-## Task 10: Rock-Paper-Scissors Judge ⭐⭐⭐
+## Task 10: Rock-Paper-Scissors Judge 
 **Difficulty: Hard**
 
 Create a program that determines the winner of rock-paper-scissors:
@@ -252,52 +252,6 @@ Player 1 wins!
 - Then check all win conditions for player 1
 - Else player 2 wins
 - Use `.lower()` for input consistency
-
----
-
-## Challenge Task: Leap Year Calculator 🌟
-**Difficulty: Challenge**
-
-Write a program that determines if a year is a leap year.
-
-Rules:
-- If divisible by 4: it's a leap year
-- EXCEPT if divisible by 100: not a leap year
-- EXCEPT if divisible by 400: it IS a leap year
-
-Examples:
-- 2020: leap year (divisible by 4)
-- 1900: NOT a leap year (divisible by 100 but not 400)
-- 2000: leap year (divisible by 400)
-
-**Sample Run:**
-```
-Enter a year: 2024
-2024 is a leap year.
-```
-
-**Hints:**
-- Check conditions in order: 400, then 100, then 4
-- Use modulus operator: `year % 400 == 0`
-
----
-
-## Bonus Challenge: Roman Numeral Converter 🌟🌟
-**Difficulty: Very Hard**
-
-Create a program that converts numbers 1-10 to Roman numerals:
-- 1 = I, 2 = II, 3 = III, 4 = IV, 5 = V
-- 6 = VI, 7 = VII, 8 = VIII, 9 = IX, 10 = X
-
-**Sample Run:**
-```
-Enter a number (1-10): 7
-Roman numeral: VII
-```
-
-Then extend it to handle numbers 1-100!
-- X = 10, XX = 20, XXX = 30, XL = 40, L = 50
-- LX = 60, LXX = 70, LXXX = 80, XC = 90, C = 100
 
 ---
 
