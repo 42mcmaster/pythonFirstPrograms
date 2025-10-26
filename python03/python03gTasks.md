@@ -38,7 +38,7 @@ Blastoff!
 Create a program that keeps asking for numbers and adds them up until the user enters 0.
 
 **Sample Run:**
-```
+```python
 Enter a number (0 to stop): 5
 Enter a number (0 to stop): 10
 Enter a number (0 to stop): 3
@@ -60,7 +60,7 @@ Write a program that keeps asking for a password until the user enters the corre
 The correct password is "python123".
 
 **Sample Run:**
-```
+```python
 Enter password: hello
 Incorrect! Try again.
 Enter password: test
@@ -79,11 +79,24 @@ Access granted!
 ## Task 4: Average Calculator 
 **Difficulty: Medium**
 
+Absolutely — that’s a great catch. The term **“sentinel value”** can sound technical to beginners. Here’s a clearer, student-friendly rewrite of your task:
+
+---
+
+### 🧮 Task 4: Average Calculator
+
+**Difficulty:** Medium
+
 Create a program that calculates the average of numbers entered by the user.
-Use -1 as the sentinel value to stop.
+The program should keep asking for numbers **until the user types `-1`**, which means *they’re done entering numbers*.
+
+> 🔹 Don’t include `-1` in the average — it’s just the **stop signal**.
+
+---
 
 **Sample Run:**
-```
+
+```python
 Enter a number (-1 to finish): 10
 Enter a number (-1 to finish): 20
 Enter a number (-1 to finish): 30
@@ -91,10 +104,21 @@ Enter a number (-1 to finish): -1
 Average: 20.0
 ```
 
+---
+
 **Hints:**
-- Keep track of sum AND count
-- Don't count the -1 in the average
-- Average = sum / count
+
+* The answer is at the end of this document :) 
+* Keep track of both the **sum** and the **count** of the numbers entered.
+* When the user types `-1`, stop the loop.
+* Then calculate:
+
+```python
+average = sum / count
+```
+
+**Key Idea:**
+`-1` isn’t part of the data — it’s just a special value that tells the program to **stop collecting input**.
 
 ---
 
@@ -308,3 +332,31 @@ If your program hangs:
    while count < 5:  # Already false!
        print(count)
    ```
+
+--- 
+
+### 🧮 Task 4 Answer: 
+
+# Average Calculator Program
+
+```python
+total = 0      # keeps track of the sum of all numbers
+count = 0      # keeps track of how many numbers were entered
+
+while True:
+    number = float(input("Enter a number (-1 to finish): "))
+
+    if number == -1:   # stop signal
+        break
+
+    total += number
+    count += 1
+
+# avoid dividing by zero if the user enters -1 first
+if count > 0:
+    average = total / count
+    print("Average:", average)
+else:
+    print("No numbers were entered.")
+
+```
