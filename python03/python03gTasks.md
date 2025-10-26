@@ -109,16 +109,16 @@ Average: 20.0
 **Hints:**
 
 * The answer is at the end of this document :) 
-* Keep track of both the **sum** and the **count** of the numbers entered.
+* Keep track of both the `total` of the values entered which you can call `num` and the `count`, which is the number of times a `num` was entered.
 * When the user types `-1`, stop the loop.
 * Then calculate:
 
 ```python
-average = sum / count
+average = total / count
 ```
 
 **Key Idea:**
-`-1` isn’t part of the data — it’s just a special value that tells the program to **stop collecting input**.
+`-1` isn’t part of the data collected for the average calculation — it’s just a special value that tells the program to **stop collecting input**.
 
 ---
 
@@ -344,19 +344,14 @@ total = 0      # keeps track of the sum of all numbers
 count = 0      # keeps track of how many numbers were entered
 
 while True:
-    number = float(input("Enter a number (-1 to finish): "))
+    num = int(input("Enter any number (-1 to stop): "))
+    if num == -1:
+        print("You're done!")
+        break  # exit the loop when -1 is entered
+    
+    total += num   # add the number to the running total
+    count += 1     # count how many valid numbers were entered
 
-    if number == -1:   # stop signal
-        break
-
-    total += number
-    count += 1
-
-# avoid dividing by zero if the user enters -1 first
-if count > 0:
-    average = total / count
-    print("Average:", average)
-else:
-    print("No numbers were entered.")
+print(f"Average = {total / count}")
 
 ```
