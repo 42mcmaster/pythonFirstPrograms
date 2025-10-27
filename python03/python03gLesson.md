@@ -177,7 +177,11 @@ while True:
 
 Another way to control a while loop: use a Boolean variable.
 
+You use a Boolean variable like done = False so the loop keeps running until a valid condition is met, and then setting done = True cleanly stops the loop without needing a break.
+
 ```python
+# You use a Boolean variable like done = False so the loop keeps running until a valid condition is met, and then setting done = True cleanly stops the loop without needing a break.
+
 done = False
 
 while not done:
@@ -191,13 +195,12 @@ while not done:
 
 # Process the valid grade
 ```
-
-This is clearer than `while True` for some situations.
-
 ## Infinite Loops
 
 An **infinite loop** runs forever because the condition never becomes False.
 
+**Break out of an infinite loop using** 
+## `Ctrl + C`
 ### Common Causes
 
 **Mistake 1: Never updating the loop control variable**
@@ -236,6 +239,8 @@ If your program hangs:
 ## Loop Patterns
 
 ### Pattern 1: Sentinel-Controlled Loop
+
+Think of `sentinel-controlled` as a `"stop word"` or value
 
 ```python
 total = 0

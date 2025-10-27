@@ -194,6 +194,10 @@ But they're random enough for most purposes:
 
 **For the same seed, you get the same sequence:**
 
+In the example below you’re basically telling Python’s random-number algorithm:
+
+`“Start your sequence from position 42.”`
+
 ```python
 import random
 
